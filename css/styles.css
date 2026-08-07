@@ -1,0 +1,105 @@
+/* ==========================================================================
+   1. CSS VARIABLES & DESIGN TOKENS
+   ========================================================================== */
+:root {
+    /* Color Palette */
+    --color-primary: #143810;          /* Deep Forest Green */
+    --color-primary-hover: #0a2107;
+    --color-accent: #9a3412;           /* Deep Warm Bronze/Amber Badge */
+    --color-text-dark: #0f172a;        /* Charcoal Headings */
+    --color-text-body: #334155;        /* Slate Gray Paragraphs */
+    --color-white: #ffffff;
+    --color-card-border: #cbd5e1;     /* Solid, defined border color */
+
+    /* Soft Subtle Gradients */
+    --gradient-hero: linear-gradient(180deg, #dcfce7 0%, #edfcf2 60%, #ffffff 100%);
+    --gradient-about: linear-gradient(180deg, #f0fdf4 0%, #dcfce7 50%, #f0fdf4 100%);
+    --gradient-newsletter: linear-gradient(180deg, #e8f5e9 0%, #c8e6c9 100%);
+
+    /* Fonts */
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
+
+    /* Spacing Scale */
+    --space-xs: 0.625rem;  /* 10px */
+    --space-sm: 1.25rem;   /* 20px */
+    --space-md: 2rem;      /* 32px */
+    --space-lg: 3.5rem;    /* 56px */
+    --space-xl: 6rem;      /* 96px */
+
+    /* Card Radius */
+    --radius-sm: 8px;
+    --radius-lg: 16px;
+}
+
+/* ==========================================================================
+   2. BOX MODEL & TYPOGRAPHY RESET
+   ========================================================================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-text-body);
+    background-color: var(--color-white);
+    line-height: 1.7;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* 1280px Desktop Container */
+.container {
+    width: 92%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Clean Sections */
+.full-section {
+    width: 100%;
+    padding: var(--space-xl) 0;
+}
+
+/* Section Badges */
+.section-badge {
+    display: inline-block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    color: var(--color-primary);
+    background-color: #bbf7d0;
+    padding: 0.35rem 1rem;
+    border-radius: 30px;
+    margin-bottom: var(--space-xs);
+}
