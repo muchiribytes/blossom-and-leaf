@@ -645,3 +645,46 @@ img {
     color: var(--color-text-body);
     font-weight: 500;
 }
+
+/* ==========================================================================
+   10. MOBILE RESPONSIVENESS
+   ========================================================================== */
+@media (max-width: 768px) {
+    .header-container {
+        text-align: center;
+    }
+    
+    .site-nav {
+        display: block;
+        margin: var(--space-xs) 0;
+    }
+
+    .nav-item {
+        margin: 0 0.75rem;
+    }
+
+    .header-actions {
+        display: block;
+        margin-top: 0.5rem;
+    }
+
+    .product-card, 
+    .feature-box,
+    .testimonial-card {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: var(--space-sm);
+    }
+
+    .product-card {
+        height: auto;
+        padding-bottom: 5rem; /* Room for absolute button on mobile */
+    }
+
+    .newsletter-form input[type="email"] {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: var(--space-xs);
+    }
+}
