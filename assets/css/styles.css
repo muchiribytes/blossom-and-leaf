@@ -462,3 +462,53 @@ img {
 .featured-cta p {
     margin-bottom: var(--space-xs);
 }
+
+/* ==========================================================================
+   6. ABOUT SECTION
+   ========================================================================== */
+.section-about {
+    background: var(--gradient-about);
+}
+
+.about-description {
+    font-size: 1.2rem;
+    color: var(--color-text-dark);
+    font-weight: 500;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto var(--space-lg) auto;
+}
+
+.features-wrapper {
+    font-size: 0;
+}
+
+.feature-box {
+    display: inline-block;
+    vertical-align: top;
+    width: 44%;
+    margin: 0 3%;
+    font-size: 1rem;
+    padding: var(--space-md);
+    background-color: var(--color-white);
+    border: 2px solid var(--color-card-border);
+    border-radius: var(--radius-lg);
+}
+
+.feature-icon {
+    font-size: 2.2rem;
+    color: var(--color-primary);
+    margin-bottom: var(--space-xs);
+}
+
+.feature-box h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    color: var(--color-text-dark);
+    margin-bottom: 0.3rem;
+}
+
+.feature-box p {
+    color: var(--color-text-body);
+    font-size: 1rem;
+}
