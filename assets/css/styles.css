@@ -568,3 +568,38 @@ img {
     color: var(--color-text-body);
     font-weight: 600;
 }
+
+/* ==========================================================================
+   8. NEWSLETTER SECTION
+   ========================================================================== */
+.section-newsletter {
+    background: var(--gradient-newsletter);
+}
+
+.section-newsletter h2 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+
+.newsletter-subtitle {
+    color: var(--color-text-body);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.newsletter-form {
+    margin-top: var(--space-md);
+}
+
+.newsletter-form input[type="email"] {
+    padding: 0.95rem 1.25rem;
+    font-size: 1rem;
+    border: 2px solid var(--color-card-border);
+    border-radius: var(--radius-sm);
+    width: 320px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: var(--space-xs);
+    color: var(--color-text-dark);
+}
