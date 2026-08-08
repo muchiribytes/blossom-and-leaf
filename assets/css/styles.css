@@ -603,3 +603,45 @@ img {
     margin-right: var(--space-xs);
     color: var(--color-text-dark);
 }
+
+/* ==========================================================================
+   9. SITE FOOTER
+   ========================================================================== */
+.site-footer {
+    background-color: var(--color-white);
+    padding: var(--space-xl) 0;
+    color: var(--color-text-body);
+}
+
+.footer-brand {
+    margin-bottom: var(--space-sm);
+}
+
+.social-links {
+    margin-bottom: var(--space-sm);
+}
+
+.social-icon-btn {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 50%;
+    color: var(--color-primary);
+    font-size: 1.1rem;
+    margin: 0 0.4rem;
+    text-decoration: none;
+    transition: background-color 0.15s ease, color 0.15s ease;
+    background-color: #f1f5f9;
+}
+
+.social-icon-btn:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.copyright {
+    font-size: 0.95rem;
+    color: var(--color-text-body);
+    font-weight: 500;
+}
