@@ -405,6 +405,7 @@ img {
     margin-bottom: 1.25rem;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     height: 2.85em; /* Guarantees strict line matching */
@@ -511,4 +512,59 @@ img {
 .feature-box p {
     color: var(--color-text-body);
     font-size: 1rem;
+}
+
+/* ==========================================================================
+   7. TESTIMONIALS SECTION
+   ========================================================================== */
+.section-testimonials {
+    background-color: var(--color-white);
+}
+
+.testimonials-gallery {
+    text-align: center;
+    font-size: 0;
+}
+
+.testimonial-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    max-width: 480px;
+    margin: 0 2% var(--space-sm) 2%;
+    font-size: 1rem;
+    background: var(--color-white);
+    padding: var(--space-md);
+    border: 2px solid var(--color-card-border);
+    border-radius: var(--radius-lg);
+    text-align: left;
+}
+
+.stars {
+    color: var(--color-accent);
+    font-size: 1rem;
+    margin-bottom: var(--space-xs);
+}
+
+.review-text {
+    font-size: 1.05rem;
+    color: var(--color-text-dark);
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: var(--space-sm);
+    line-height: 1.6;
+}
+
+.client-name {
+    display: block;
+    font-weight: 700;
+    color: var(--color-primary);
+    font-size: 1rem;
+}
+
+.client-role {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--color-text-body);
+    font-weight: 600;
 }
