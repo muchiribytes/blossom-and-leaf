@@ -225,3 +225,79 @@ img {
     text-align: center;
     line-height: 20px;
 }
+
+/* ==========================================================================
+   4. HERO SECTION
+   ========================================================================== */
+.section-hero {
+    background: var(--gradient-hero);
+    padding: var(--space-xl) 0;
+}
+
+.tagline {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    color: var(--color-primary);
+    display: block;
+    margin-bottom: var(--space-xs);
+}
+
+.hero-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    color: var(--color-primary);
+    margin-bottom: var(--space-xs);
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: var(--color-text-body);
+    font-weight: 500;
+    max-width: 680px;
+    margin: 0 auto var(--space-md) auto;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 0.95rem 2.2rem;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.btn-secondary {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* Full-Width Stacked Card Button */
+.btn-full {
+    width: calc(100% - 3.5rem); /* Matches card-body horizontal padding */
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.75rem;
+    text-align: center;
+    padding: 0.85rem 0;
+    font-size: 0.95rem;
+    border-radius: 8px;
+}
